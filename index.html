@@ -1,16 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Title Here</title>
+    <title>Where Is waldo</title>
 
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
+  <body>
+    <img src="./waldo.jpg" id="picWaldo" />
 
-<body>
-  <script src="scripts.js"></script>
-</body>
+    <div class="buttonPopUp">
+      <button class="nameButton" id="waldo">WALDO</button>
+      <button class="nameButton" id="wilma">WILMA</button>
+      <button class="nameButton" id="wizard">WIZARD</button>
+      <button class="nameButton" id="odlaw">ODLAW</button>
+    </div>
+
+    <div id="scorePopUp">
+      <label>Your Name</label>
+      <input type="text" id="nameText" />
+      <label>Game Duration</label>
+      <input type="text" id="durationText" disabled />
+      <button id="scoreSaveButton">OK</button>
+    </div>
+
+    <div id="highScorePopUp">
+      <label id="scoreListTitle">High Scores</label>
+    </div>
+
+    <!-- FIREBASE SCRIPTS -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDPZZwU5mmARlDwpJzDj9863XDS8KEFBKE",
+        authDomain: "whereiswaldo-49253.firebaseapp.com",
+        databaseURL:
+          "https://whereiswaldo-49253-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "whereiswaldo-49253",
+        storageBucket: "whereiswaldo-49253.appspot.com",
+        messagingSenderId: "262685300925",
+        appId: "1:262685300925:web:63d85ca06187ea1953bfd4",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="scripts.js"></script>
+  </body>
 </html>

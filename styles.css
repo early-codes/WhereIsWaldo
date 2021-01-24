@@ -1,0 +1,57 @@
+.buttonPopUp {
+  position: fixed;
+  display: none;
+}
+
+.buttonPopUp button {
+  display: block;
+  height: 15px;
+  width: 60px;
+  font-size: xx-small;
+}
+
+#scorePopUp {
+  display: none;
+  position: fixed;
+  left: 500px;
+  top: 200px;
+  height: 150px;
+  width: 260px;
+  background-color: red;
+  border-radius: 20px;
+}
+
+#scorePopUp * {
+  margin-left: 40px;
+}
+
+#scorePopUp label {
+  font-size: x-large;
+  margin-top: 5px;
+}
+
+#scorePopUp button {
+  margin: 20px auto;
+}
+
+#highScorePopUp {
+  display: none;
+  position: fixed;
+  width: 260px;
+  left: 500px;
+  top: 200px;
+  font-size: x-large;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#highScoresTitle {
+  margin: 10px auto;
+}
+
+#highScorePopUp * {
+  margin: 10px;
+  display: inline-block;
+}

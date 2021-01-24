@@ -1,0 +1,4 @@
+wizard	816x	241y
+waldo	473	1544
+wilma	2139	1391
+oldaw	2444	1499
